@@ -3,7 +3,7 @@
 import sys
 
 if sys.argv[1:2] == ['kernel']:
-	from blender_ipython_kernel import launch_kernel
+	from blender_ipython_wrapper import launch_kernel
 	launch_kernel(sys.argv[1:])
 else:
 	from os.path       import abspath, dirname, join as pathjoin
