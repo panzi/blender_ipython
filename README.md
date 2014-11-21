@@ -1,7 +1,7 @@
 IPython for Blender
 ===================
 
-This scripts contain hacks in order to run [IPython][1] in the context of [Blenders][2]
+These scripts contain hacks in order to run [IPython][1] in the context of [Blender's][2]
 embedded Python interpreter.
 
 [1]: http://ipython.org/
