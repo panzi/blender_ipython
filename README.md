@@ -19,7 +19,15 @@ Start a Qt Console:
 
 	./blender_ipython.py qtconsole
 
+Dependencies
+------------
 
+ * [Python][3] 3
+ * [IPython][1] for Python 3
+ * [Blender][2]
+
+[3]: https://www.python.org/
+ 
 The MIT License (MIT)
 ---------------------
 
