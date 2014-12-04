@@ -15,6 +15,6 @@ else:
 
 	# use wrapper script for starting python processes
 	# the wrapper will defer execution to blender, if it was used to start a new kernel
-	sys.executable = pathjoin(dirname(abspath(__file__)), 'blender_ipython_wrapper.py')
+	sys.executable = pathjoin(dirname(abspath(sys.argv[0])), 'blender_ipython_wrapper.py')
 
 	launch_new_instance()
