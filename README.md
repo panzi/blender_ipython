@@ -22,12 +22,14 @@ Start a Qt Console:
 Dependencies
 ------------
 
- * [Python][3] 3
- * [IPython][1] for Python 3
+ * [Python][3] 3.3 (not tested with Python 3.4)
+ * [IPython][1] 0.13 for Python 3 (not tested with IPython 1.x)
  * [Blender][2]
 
+I only have Python 3.3 and IPython 0.13 and thus this was not tested with any newer versions. Because this scripts use big hacks to get the IPython kernel running in Blender it is very likely that it won't work with any other versions. In fact I got bug reports where people with Python 3.4 and IPython 1.x could not get it to work.
+
 [3]: https://www.python.org/
- 
+
 The MIT License (MIT)
 ---------------------
 
