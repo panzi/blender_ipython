@@ -18,6 +18,25 @@ Start an IPython Notebook:
 Start a Qt Console:
 
 	./blender_ipython.py qtconsole
+	
+Installing Jupyter/Ipython Kernel
+------------
+
+- [Find the jupyter kernel path for your system](http://jupyter-client.readthedocs.org/en/latest/kernels.html) and create a blender directory. On unix this is `~/.local/share/jupyter/kernels`
+
+- Place a kernel.json file in the directory `~/.local/share/jupyter/kernels/blender/kernel.json`
+- The contents of the json are as follows, where you replace "PATH_TO_SCRIPT" with the actual path
+```json
+{
+ "argv": ["PATH_TO_SCRIPT/blender_ipython.py", "kernel",
+          "-f", "{connection_file}"],
+ "display_name": "Blender env",
+ "language": "python"
+}
+```
+- now start the notebook normally (`jupyter notebook`) and you will see a new kernel under "new" called blender.
+- make a new notebook using this kernel and test it by running `import bpy`
+- you are now set up
 
 Dependencies
 ------------
