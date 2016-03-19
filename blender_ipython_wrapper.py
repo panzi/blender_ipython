@@ -15,7 +15,10 @@ def launch_kernel(argv):
 		f.write("""\
 import sys
 sys.argv[:] = [sys.executable]
-from IPython.zmq.ipkernel import IPKernelApp
+try:
+	from IPython.zmq.ipkernel import IPKernelApp
+except ImportError as err:
+	from ipykernel.kernelapp import IPKernelApp
 
 app = IPKernelApp.instance()
 app.initialize(%r)
